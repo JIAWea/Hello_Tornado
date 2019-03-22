@@ -5,10 +5,19 @@
     <title>Login</title>
 </head>
 <body>
+    {{ tab(666) }}              <!--不渲染-->
+    {% raw tab(11) %}           <!--帮我们渲染-->
+
+    {% module Foo() %}          <!--自动渲染-->
     <form action="/login" method="post">
         <input type="text" name="username"><br>
         <input type="text" name="password"><br>
-        <input type="submit" value="提交">
+        <input type="submit" value="提交">{{ msg }}
     </form>
+    <script>
+        window.onload=function () {
+            // fun();
+        }
+    </script>
 </body>
 </html>

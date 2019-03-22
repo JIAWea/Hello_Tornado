@@ -9,8 +9,15 @@ class MainHandler(tornado.web.RequestHandler):
         self.render("main.html")
         # self.redirect('http://www.baidu.com')
 
+import uimethods as ut
+import uimodules as mm
+
 settings = {
-    "template_path": 'views',
+    "template_path": 'views',           # 模板
+    "cookie_secret":'abcdefgijk',       # cookie加密
+    "ui_methods":ut,                    # 模板标签不渲染
+    "ui_modules":mm,                    # 模板标签自动渲染
+    "static_path":'static',
 }
 
 application = tornado.web.Application([

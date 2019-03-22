@@ -12,7 +12,7 @@ class LoginHandler(tornado.web.RequestHandler):
         username = self.get_argument('username')
         password = self.get_argument('password')
         if username == "root" and password == '123':
-            self.set_cookie('xxxxxx','oooooo')
+            self.set_secure_cookie('xxxxxx','oooooo')
             # self.set_secure_cookie('xxxxxx','oooooo')
             self.redirect('/home')
         else:

@@ -7,7 +7,7 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         # self.write("Hello, world")
         self.render("main.html")
-        # self.redirect('http://www.baidu.com')
+        # self.redirect('http://www.baidu.com') 
 
 import uimethods as ut
 import uimodules as mm

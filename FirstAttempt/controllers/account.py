@@ -13,7 +13,7 @@ class LoginHandler(tornado.web.RequestHandler):
         password = self.get_argument('password')
         if username == "root" and password == '123':
             self.set_secure_cookie('xxxxxx','oooooo')
-            # self.set_secure_cookie('xxxxxx','oooooo')
+            # self.set__cookie('xxxxxx','oooooo') 对应 self.get_cookie('xxxxxx')
             self.redirect('/home')
         else:
             self.render('login.html',msg="用户名或密码错误")

@@ -20,6 +20,5 @@ class Foo(UIModule):
         return "function fun(){alert(1)}"
 
     def render(self):
-
         return "<h1>这是modules模板</h1>"
         # return escape.xhtml_escape("<h1>这是modules模板</h1>")

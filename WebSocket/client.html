@@ -9,7 +9,7 @@
         ws = new WebSocket("ws://127.0.0.1:8002");
         ws.onopen = function () {
             console.log(1111);
-            ws.send('hello村长')
+            ws.send('what's up')
         };
         ws.onmessage = function (event) {
             console.log(event);

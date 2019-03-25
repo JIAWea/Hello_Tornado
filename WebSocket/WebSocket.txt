@@ -1,6 +1,5 @@
-Day101
-	www.cnblogs.com/wupeiqi/p/6558766.html
-	
+WebSocket实现原理:
+
 	- 概述：
 		- Http , socket实现,短链接,单工通道（客户端只能发生请求和客户端响应）
 		- WebSocket , soceket实现,双工通道（客户端只能发生请求和客户端响应，客户端也能推送消息）
